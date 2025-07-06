@@ -2,7 +2,8 @@
 
 🚀 Create Node.js native addons with ease
 
-A modern CLI tool for scaffolding Node.js native addon projects with an interactive interface. Generate boilerplate code for C++, Objective-C, and Swift addons with platform-specific templates.
+A modern CLI tool for scaffolding Node.js native addon projects with an interactive interface. Generate boilerplate code
+for C++, Objective-C, and Swift addons with platform-specific templates.
 
 ## Features
 
@@ -54,36 +55,44 @@ create-addon my-awesome-addon --template cpp-linux
 ## Templates
 
 ### 🐧 cpp-linux
+
 C++ addon optimized for Linux platforms with GTK+ integration.
 
 **Features:**
+
 - GTK+ GUI components
 - Event-driven architecture
 - Todo management functionality
 - Platform detection and safety checks
 
 ### 🪟 cpp-win32
+
 C++ addon designed for Windows platforms.
 
 **Features:**
+
 - Windows-specific APIs
 - Native Win32 integration
 - Event system for UI interactions
 - Build configuration for Windows
 
 ### 🍎 objective-c
+
 Objective-C addon for macOS with native Cocoa integration.
 
 **Features:**
+
 - Native macOS UI components
 - Todo management with Objective-C classes
 - Bridge between Objective-C and JavaScript
 - macOS-specific functionality
 
 ### 🦉 swift
+
 Swift addon for macOS with modern Swift integration.
 
 **Features:**
+
 - Modern Swift code
 - Native Swift-to-JavaScript bridge
 - Event-driven communication
@@ -166,25 +175,25 @@ npm run build-electron
 Generated addons follow a consistent EventEmitter pattern:
 
 ```javascript
-const addon = require('./js/index.js');
+const addon = require("./js/index.js");
 
 // Basic usage
-console.log(addon.helloWorld('Hello from Node.js!'));
+console.log(addon.helloWorld("Hello from Node.js!"));
 
 // GUI interaction (platform-specific)
 addon.helloGui();
 
 // Event handling
-addon.on('todoAdded', (todo) => {
-  console.log('New todo:', todo);
+addon.on("todoAdded", (todo) => {
+  console.log("New todo:", todo);
 });
 
-addon.on('todoUpdated', (todo) => {
-  console.log('Updated todo:', todo);
+addon.on("todoUpdated", (todo) => {
+  console.log("Updated todo:", todo);
 });
 
-addon.on('todoDeleted', (todo) => {
-  console.log('Deleted todo:', todo);
+addon.on("todoDeleted", (todo) => {
+  console.log("Deleted todo:", todo);
 });
 ```
 
@@ -192,7 +201,7 @@ addon.on('todoDeleted', (todo) => {
 
 ### Prerequisites
 
-- Node.js 16+ 
+- Node.js 16+
 - Python 3.x (for node-gyp)
 - Platform-specific build tools:
   - **Linux**: build-essential, GTK+ development libraries
@@ -241,12 +250,5 @@ We welcome contributions! Please feel free to submit a Pull Request.
 
 MIT © [himself65](https://github.com/himself65)
 
-## Support
-
-- 🐛 [Report Issues](https://github.com/himself65/create-addon/issues)
-- 💡 [Feature Requests](https://github.com/himself65/create-addon/issues)
-- 📖 [Documentation](https://github.com/himself65/create-addon#readme)
-
----
-
-Made with ❤️ by [himself65](https://github.com/himself65)
+Credits to the Felix [electron-native-code-demos](https://github.com/felixrieseberg/electron-native-code-demos)
+for inspiration and initial templates.

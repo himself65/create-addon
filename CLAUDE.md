@@ -100,6 +100,7 @@ The CLI uses React components with Ink for a modern interactive experience:
 ### UI Flow States
 
 The interactive flow follows these states:
+
 1. `project-name` - Collect project name if not provided
 2. `template-selection` - Select template if not provided via CLI args
 3. `creating` - Show progress while copying files and updating configuration
@@ -138,6 +139,7 @@ Available templates: `cpp-linux`, `cpp-win32`, `objective-c`, `swift`
 ## Template File Structure
 
 Templates are located in `templates/` and follow this structure:
+
 - `binding.gyp` - node-gyp configuration for native compilation
 - `package.json` - Template package with build scripts and dependencies
 - `src/` - Native source code (C++, Objective-C, Swift)
