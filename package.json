@@ -7,7 +7,9 @@
   "files": [
     "dist",
     "README.md",
-    "templates"
+    "templates",
+    "!templates/**/build",
+    "!templates/**/build_swift"
   ],
   "scripts": {
     "build": "bunchee",
