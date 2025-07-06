@@ -6,7 +6,8 @@
   "bin": "./dist/bin.js",
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "templates"
   ],
   "scripts": {
     "build": "bunchee",
