@@ -1,0 +1,15 @@
+{
+  "name": "objective-c",
+  "version": "1.0.0",
+  "description": "A demo module that exposes Objective-C code to Node.js",
+  "main": "js/index.js",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build": "node-gyp configure && node-gyp build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^8.3.0"
+  }
+}
