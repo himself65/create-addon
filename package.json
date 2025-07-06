@@ -1,6 +1,6 @@
 {
   "name": "create-addon",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Create Node.js native addons with ease",
   "type": "module",
   "bin": "./dist/bin.js",
